@@ -1,5 +1,6 @@
 import React from "react";
 import ExportToExcel from "./components/ExportToExcel.jsx";
+import DataGridTable from "./components/DataGridTable.jsx";
 
 export default function App() {
   const users = [
@@ -26,6 +27,8 @@ export default function App() {
         ))}
       </table>
       <ExportToExcel data={users} />
+      <hr />
+      <DataGridTable data={users} />
     </div>
   );
 }
